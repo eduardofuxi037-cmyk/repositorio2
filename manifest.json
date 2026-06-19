@@ -1,0 +1,20 @@
+{
+    "name": "Calculadora da Rosmalia",
+    "short_name": "Calculadora_rosmalia",
+    "display": "standalone",
+    "backgound_color": "#ffffff",
+    "theme_color": "#b57aff",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b57aff">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="input-container">
+            <input type="text" id="entrada">
+        </div>
+        <div class="botoes-container">
+            <div class="botoes">
+                <button onclick="adicionar00()" style="background-color: var( --cor-dos-botoes-de-operacao); color: #FFFFFF;">00</button>
+                <button onclick="adicionarpar1()" style="background-color: var( --cor-dos-botoes-de-operacao); color: #FFFFFF;">(</button>
+                <button onclick="adicionarpar2()" style="background-color: var( --cor-dos-botoes-de-operacao); color: #FFFFFF;">)</button>
+                <button onclick="adicionarfat()" style="background-color: var( --cor-dos-botoes-de-operacao); color: #FFFFFF;">!</button>
+            </div>
+
+            <div class="botoes">
+                <button onclick="adicionar7()">7</button>
+                <button onclick="adicionar8()">8</button>
+                <button onclick="adicionar9()">9</button>
+                <button onclick="adicionarsoma()">+</button>
+            </div>
+
+            <div class="botoes">
+                <button onclick="adicionar4()">4</button>
+                <button onclick="adicionar5()">5</button>
+                <button onclick="adicionar6()">6</button>
+                <button onclick="adicionarsub()">-</button>
+            </div>
+
+            <div class="botoes">
+                <button onclick="adicionar1()">1</button>
+                <button onclick="adicionar2()">2</button>
+                <button onclick="adicionar3()">3</button>
+                <button onclick="adicionarmult()">*</button>
+            </div>
+
+            <div class="botoes">
+                <button onclick="adicionarC()">C</button>
+                <button onclick="adicionar0()">0</button>
+                <button onclick="adicionarV()">V</button>
+                <button onclick="adicionardiv()">/</button>
+            </div>
+
+            <div class="botoes">
+                <button onclick="adicionardel()">del</button>
+                <button onclick="adicionarvirg()">,</button>
+                <button onclick="adicionarperc()">%</button>
+                <button onclick="adicionarigual()">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="evento.js"></script>
+    <script>
+        if("ServiceWorker" in navigator){
+            navigator.serviceWorker.register("sw.js");
+        }
+    </script>
+
+</body>
+
+</html>
